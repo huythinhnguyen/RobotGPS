@@ -52,8 +52,8 @@ class GPS(object):
 
         r = 0.05        # assuming the center of the robot is exactly 50mm from the wheel axis
         # offset to circle at center Cx,Cy
-        self.x = Cx - (r*np.cos(np.radians(self.theta)))
-        self.y = Cy - (r*np.sin(np.radians(self.theta)))
+        self.x = Cx + (r*np.cos(np.radians(self.theta)))
+        self.y = Cy + (r*np.sin(np.radians(self.theta)))
 
 
     #### Update GPS object's x, y, and theta ####
